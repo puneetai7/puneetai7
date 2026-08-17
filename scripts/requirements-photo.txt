@@ -1,0 +1,7 @@
+# Only needed locally, once, to turn a photo into ASCII art.
+# CI never installs these (see scripts/requirements.txt).
+pillow
+numpy
+opencv-python
+rembg
+onnxruntime

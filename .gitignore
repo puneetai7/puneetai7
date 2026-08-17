@@ -1,0 +1,9 @@
+.venv/
+
+# Intermediates for the portrait. The published art is avi-ascii.svg; there is
+# no reason to put the source headshot itself in a public repo.
+data/prepped-photo.png
+data/prepped-alpha.png
+__pycache__/
+*.pyc
+.DS_Store

@@ -1,0 +1,11 @@
+{
+  "handle": "puneetai7",
+  "title": "puneetai7@github",
+  "tagline": "building agentic systems that read the market before it moves",
+  "rows": [
+    { "k": "focus", "v": "AI agents · MCP servers · data pipelines" },
+    { "k": "shipping", "v": "TrendPulse — 5-agent trend intelligence pipeline" },
+    { "k": "stack", "v": "Python · FastAPI · MCP · vanilla JS" },
+    { "k": "into", "v": "leading indicators over lagging dashboards" }
+  ]
+}
