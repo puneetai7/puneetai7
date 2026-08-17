@@ -38,7 +38,15 @@ jobs:
       - name: Render info card
         run: python scripts/make_info_card.py
 
+      - name: Render banner
+        run: python scripts/make_banner.py
+
+      - name: Render language mix
+        run: python scripts/make_lang_bar.py
+
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore: refresh profile art [skip ci]"
-          file_pattern: "data/contributions.json contrib-heatmap.svg info-card.svg"
+          file_pattern: >-
+            data/contributions.json contrib-heatmap.svg info-card.svg
+            banner.svg lang-bar.svg

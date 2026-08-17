@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="176"
+     viewBox="0 0 860 176" role="img"
+     aria-label="puneetai7 — building agentic systems that read the market before it moves">
+  <defs>
+    <linearGradient id="sweep" gradientUnits="userSpaceOnUse"
+                    x1="0" y1="0" x2="420" y2="0" spreadMethod="repeat">
+      <stop offset="0"    stop-color="#1f9e40"/>
+      <stop offset="0.35" stop-color="#39d353"/>
+      <stop offset="0.5"  stop-color="#d8ffe6"/>
+      <stop offset="0.65" stop-color="#39d353"/>
+      <stop offset="1"    stop-color="#1f9e40"/>
+      <animateTransform attributeName="gradientTransform" type="translate"
+                        from="0 0" to="420 0" dur="3.2s" repeatCount="indefinite"/>
+    </linearGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <style>
+    .wordmark {
+      font: 700 62px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      letter-spacing: 6px;
+    }
+    .tag {
+      font: 15px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      fill: #8b949e;
+      clip-path: inset(0 0 0 0);
+      animation: type 1.6s steps(48, end) both;
+      animation-delay: .45s;
+    }
+    @keyframes type {
+      from { clip-path: inset(0 100% 0 0); }
+      to   { clip-path: inset(0 0 0 0); }
+    }
+    .rule {
+      stroke: #39d353; stroke-width: 2; stroke-linecap: round;
+      stroke-dasharray: 860; stroke-dashoffset: 0;
+      animation: draw .9s cubic-bezier(.2,.8,.3,1) both;
+    }
+    @keyframes draw {
+      from { stroke-dashoffset: 860; }
+      to   { stroke-dashoffset: 0; }
+    }
+    .caret {
+      font: 15px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      fill: #39d353;
+      animation: blink 1.05s steps(1, end) infinite both;
+      animation-delay: 2.05s;
+    }
+    @keyframes blink { 0%, 50% { opacity: 1; } 51%, 100% { opacity: 0; } }
+    @media (prefers-reduced-motion: reduce) {
+      .tag, .rule, .caret { animation: none; }
+    }
+  </style>
+  <rect width="100%" height="100%" fill="#0d1117" rx="12"/>
+  <text class="wordmark" x="30" y="86" fill="url(#sweep)"
+        filter="url(#soft)">puneetai7</text>
+  <line class="rule" x1="30" y1="106" x2="830" y2="106"/>
+  <text class="tag" x="30" y="136">building agentic systems that read the market before it moves</text>
+  <text class="caret" x="30" y="158">&#9611;</text>
+</svg>

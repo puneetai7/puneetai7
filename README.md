@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="banner.svg" width="860" alt="puneetai7 — building agentic systems that read the market before it moves">
+
 <img src="contrib-heatmap.svg" width="860" alt="GitHub contribution heatmap, refreshed daily">
 
 <table>
@@ -16,6 +18,8 @@
 </td>
 </tr>
 </table>
+
+<img src="lang-bar.svg" width="860" alt="Language mix across public repositories">
 
 </div>
 
@@ -40,9 +44,11 @@ Everything above is a generated SVG — no GIFs, no external services.
 
 | Piece | Script | Output |
 | --- | --- | --- |
+| Banner | `scripts/make_banner.py` | `banner.svg` |
 | Contribution heatmap | `scripts/fetch_contributions.py` → `scripts/render_heatmap_svg.py` | `contrib-heatmap.svg` |
 | ASCII portrait | `scripts/prep_photo.py` → `scripts/make_ascii_svg.py` | `avi-ascii.svg` |
 | Info card | `scripts/make_info_card.py` | `info-card.svg` |
+| Language mix | `scripts/make_lang_bar.py` | `lang-bar.svg` |
 
 The animation is pure CSS keyframes inside each SVG. GitHub serves README
 images through an `<img>` tag, which runs declarative animation but no
@@ -62,6 +68,8 @@ pip install -r scripts/requirements.txt
 python scripts/fetch_contributions.py
 python scripts/render_heatmap_svg.py
 python scripts/make_info_card.py
+python scripts/make_banner.py
+python scripts/make_lang_bar.py
 ```
 
 The portrait is a one-time step and needs the heavier image dependencies:

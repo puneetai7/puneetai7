@@ -98,6 +98,11 @@ def build(rows):
       <stop offset="0.55" stop-color="#39d353"/>
       <stop offset="1" stop-color="#1f9e40"/>
     </linearGradient>
+    <!-- Phosphor bloom: a blurred copy under the crisp glyphs. -->
+    <filter id="crt" x="-8%" y="-8%" width="116%" height="116%">
+      <feGaussianBlur stdDeviation="1.1" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
   </defs>
   <style>
     /* Base state is fully revealed; `both` makes the delay hold the hidden
@@ -125,7 +130,7 @@ def build(rows):
     }}
   </style>
   <rect width="100%" height="100%" fill="#0d1117" rx="10"/>
-  {"".join(body)}
+  <g filter="url(#crt)">{"".join(body)}</g>
   {caret}
 </svg>
 '''
